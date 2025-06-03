@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3'
+services:
+  servico_1:
+    build: ./servico_1
+    ports:
+      - "5000:5000"
+  servico_2:
+    build: ./servico_2
+    ports:
+      - "5001:5000"
